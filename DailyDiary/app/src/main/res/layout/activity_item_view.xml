@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".InsertActivity">
+
+    <TextView
+            android:id="@+id/viewDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textAlignment="center"/>
+
+    <LinearLayout
+            android:id="@+id/imgTextLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+        <ImageView
+                android:id="@+id/viewWeather"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+        <TextView
+                android:id="@+id/viewTodayWeater"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <CalendarView
+            android:id="@+id/viewCalendar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:visibility="gone"/>
+
+    <EditText
+            android:background="@null"
+            android:id="@+id/viewContent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:ems="10"
+            android:inputType="textMultiLine|textPersonName"
+            android:textAlignment="center"
+            android:focusable="false"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+                android:id="@+id/updateBtn"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#123638"
+                android:text="수정"/>
+        <Button
+                android:id="@+id/deleteBtn"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#123638"
+                android:text="삭제"/>
+    </LinearLayout>
+
+
+</LinearLayout>
